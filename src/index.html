@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Service Request</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header class="request-header">
+    <div class="request-header__wrap">
+      <div class="logo">
+        <a href="#home"><img src="img/logo.png" alt="logo"></a>
+      </div>
+      <button class="btn-login">Log In Now</button>
+    </div>
+    <h2 class="request-header__title">Home of Dentistry</h2>
+    <p class="request-header__desc">Denteez was created by dentists for dentistry in order to
+      <br>make the life of everyone involved in dentistry easier.</p>
+  </header>
+  <main class="request-main">
+    <section class="request-main__contact">
+      <form enctype="multipart/form-data" action="#" method="post" name="form-request" class="request-main__form form-request">
+        <p class="form-request__requirements">Fields marked “*” are required</p>
+        <div class="form-request__wrap">
+          <select name="enquiry" id="enquiry">
+            <option value="other">Other</option>
+            <option value="first">first</option>
+            <option value="second">second</option>
+            <option value="third">third</option>
+            <option value="fourth">fourth</option>
+          </select>
+          <input type="text">
+          <input type="text">
+          <input type="email">
+          <input type="text" name="subject">
+          <textarea name="description *" id=""></textarea>
+          <input type="file" accept="image/jpeg, image/png" multiple>
+        </div>
+        <input type="submit" name="submit">
+      </form>
+    </section>
+    <section class="request-main__about about-main">
+      <h3 class="about-main__title">
+        About Denteez
+      </h3>
+      <div class="about-main__wrap">
+        <p class="about-main__desc about-main__desc_left">Why is it always so difficult to find what you are looking for in dentistry? Whether it is the latest advancement in technology or techniques or simply a review or understanding of the vast amount of products? Perhaps finding someone to just fix your broken equipment or simply hiring new staff or looking for that new job?</p>
+        <p class="about-main__desc">Our mission is to give every dental professional the possibility to discuss and share all aspects of their profession, their practice and their business. We aim to make the world of dentistry easy and accessible, so every dental professional can find what they are looking for quickly and easily all in one place.
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer class="request-footer">
+    <div class="request-footer__wrap">
+      <a href="#" class="request-footer__copy link">
+        Denteez Copyright 2015
+      </a>
+      <div class="request-footer__container">
+        <a href="#" class="request-footer__support link">Support</a>
+        <a href="#" class="request-footer__policy link">Privacy Policy</a>
+        <a href="#" class="request-footer__terms link">Terms of use</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
