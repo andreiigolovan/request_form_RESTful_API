@@ -1,11 +1,8 @@
-input, textarea, select, button
-  font: inherit
-
 .request-header
   height: 510px
   max-width: 1440px
+  padding: 40px
   margin: 0 auto
-  overflow: hidden
   color: #f3f4f6
   text-align: center
   background: #1c2534 url(../img/bg1.png) center no-repeat
@@ -13,13 +10,11 @@ input, textarea, select, button
   &__wrap
     display: flex
     justify-content: space-between
-    margin: 32px auto
-    width: 90% 
   &__title
     font-size: 48px
     font-weight: 100
     line-height: 30px
-    margin: 110px 0 20px
+    margin: 100px 0 20px
   &__desc
     font-size: 20px
     font-weight: 300
@@ -29,26 +24,79 @@ input, textarea, select, button
   font-family: inherit
   font-size: 14px
   color: #fff
-  margin-top: 15px
+  margin-top: 5px
   width: 110px
   height: 30px
   border-radius: 5px
   border: none
   background-color: #87b448
   &:hover
-    background-color: darken(#87b448, 6.25%)
+    background-color: darken(#87b448, 6.25%) // one tone darker
   &:active
-    background-color: darken(#87b448, 12.5%)
+    background-color: darken(#87b448, 12.5%) // two tones darker
 
 .request-main
   max-width: 1440px
   margin: 0 auto
   &__contact
+    position: relative
     height: 816px
     overflow: hidden
     margin: 0 auto
     background: #f3f4f6 url(../img/bg.png) center no-repeat
     border-bottom: 1px solid #e0e2e6
+  &__container
+    // position: absolute
+
+.form-request
+  &__wrap
+    display: flex
+    flex-direction: column
+    // justify-content: space-between // not needed
+    margin-bottom: 20px
+  &__input-wrap
+    display: flex
+    justify-content: space-between
+  &__name-container, &__email-container  
+    width: 48%
+  &__desc-container
+    display: flex
+    justify-content: space-between
+  &__label
+    display: block
+    margin-bottom: 10px
+  &__select
+    font: inherit
+    height: 50px
+    padding: 0 20px
+    margin-bottom: 20px
+    background-color: #fff
+    border-radius: 5px
+    border: 1px solid #c8cdd5
+  &__input
+    font: inherit
+    height: 50px
+    width: 100%
+    padding: 0 20px
+    margin-bottom: 20px
+    background-color: #fff
+    border-radius: 5px
+    border: 1px solid #c8cdd5
+  &__textarea
+    resize: none
+    font: inherit
+    height: 150px
+    padding: 20px
+    margin-bottom: 20px
+    border-radius: 5px
+    border: 1px solid #c8cdd5
+  &__input_submit
+    color: #fff
+    background-color: #87b448
+    &:hover
+      background-color: darken(#87b448, 6.25%) // one tone darker
+    &:active
+      background-color: darken(#87b448, 12.5%) // two tones darker
 
 .about-main
   padding: 65px 0 92px
@@ -74,6 +122,19 @@ input, textarea, select, button
     &_left
       margin-right: 30px
 
+.form-request
+  width: 760px
+  margin: 20px auto 0
+  &__requirements
+    color: #b7bfcd
+    margin-top: 0
+  &__wrap
+    padding: 20px
+    height: 745px
+    background-color: #fff
+    border-radius: 5px
+    border: 1px solid #e0e2e6
+
 .request-footer
   max-width: 1440px
   margin: 0 auto
@@ -92,11 +153,7 @@ input, textarea, select, button
 
 .link
   color: inherit
+  &:hover
+      color: darken(#b7bfcd, 6.25%) // one tone darker
   &:active
     color: red
-
-
-    // @media screen and (min-width: 1440px)
-    //   width: 1280px
-    // @media screen and (max-width: 970px)
-    //   width: 940px
