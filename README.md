@@ -1,7 +1,7 @@
 # test_assignment_project
 
 !!!
-builded project is located into dist/
+built project is located into dist/
 
 
 main tasks:
